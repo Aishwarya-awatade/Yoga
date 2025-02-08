@@ -10,50 +10,76 @@
     <!-- it will load fast so i have pasted in file -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000 }); // Initialize AOS animations
+    </script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- AOS (Animate On Scroll) Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    
+    <script src="/script2.js"></script>
+
+
+    <link rel="icon" type="image/x-icon" href="resourses/images/logo.jpg">
+
     <title>Morning Rise</title>
+
+
+   
 </head>
 
 <body data-spy="scroll" data-target="#navbarNav" data-offset="50">
 
+     <!-- WhatsApp Floating Button -->
+     <!-- <a href="https://wa.me/11234567890?text=Hello%20I%20need%20more%20information" target="_blank" id="whatsapp-button">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" id="whatsapp-icon">
+    </a> -->
+
+    <!-- Instagram Floating Button -->
+    <!-- <a href="https://www.instagram.com/mrnigrse" target="_blank" id="instagram-button">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" id="instagram-icon">
+    </a>
+    <script src="script2.js"></script> -->
 
     <!-- nav bar starts -->
-    <div class="navbar navbar-expand-lg fixed-top">
-        <div class="container"> 
-            <img src="resourses/images/logo.jpg" alt="" width="60 px">
-           <!-- <a href="index.html" class="navbar-brand"> Morning Rise </a>-->
+    <!-- 🚀 Animated & Responsive Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <!-- 🌟 Logo with a small hover animation -->
+            <a href="#" class="navbar-brand">
+                <img src="resourses/images/logo.jpg" alt="Logo" width="60px" class="logo">
+            </a>
+
+            <!-- 📌 Mobile Toggle Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- 🌐 Navbar Links -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-lg-auto">
-                    <li class="nav-item">
-                        <a href="#home" class="nav-link smoothScroll">Home</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link smoothScroll">About</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="#gallery" class="nav-link smoothScroll">Gallery</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="#class" class="nav-link smoothScroll">Classes</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="#schedule" class="nav-link smoothScroll">Schedules</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="#team" class="nav-link smoothScroll">Our Team</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="#contact" class="nav-link smoothScroll">Contacts</a>
-                    </li>
+                    <li class="nav-item"><a href="#home" class="nav-link smoothScroll">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link smoothScroll">About</a></li>
+                    <li class="nav-item"><a href="#gallery" class="nav-link smoothScroll">Gallery</a></li>
+                    <li class="nav-item"><a href="#class" class="nav-link smoothScroll">Classes</a></li>
+                    <li class="nav-item"><a href="#schedule" class="nav-link smoothScroll">Schedules</a></li>
+                    <li class="nav-item"><a href="#team" class="nav-link smoothScroll">Our Team</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link smoothScroll">Contacts</a></li>
                 </ul>
             </div>
         </div>
-    </div>
+    </nav>
+
 
 
     <!-- navbar ends -->
@@ -134,7 +160,7 @@
                         <div class="text mt-4">
                             <h3 class="mb-4">Wight loss </h3>
                             <p class="mb-5">
-                                By improving mindfulness, yoga decreases emotional eating, stress eating, and binge eating.
+                                By improving mindfulness,yoga decreases emotional eating, stress eating, and binge eating.
                             </p>
                             <p>
                                 <a href="#" class="btn custom-btn bg-color mt-3" data-aos="fade-up" data-aos-delay="100"
@@ -397,21 +423,9 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="timetable-controls">
-                        <ul>
-                            <li class="active" data-tsfilter="all">all class</li>
-                           <!-- <li data-tsfilter="Yoga">Yoga</li>
-                           <li data-tsfilter="Aerobics">Aerobics</li>
-                            <li data-tsfilter="Wushu">Wushu</li>
-                            <li data-tsfilter="Karate">Karate</li>
-                            <li data-tsfilter="Medetation">Medetation</li>-->
-                        </ul>
-                    </div>
-                </div>
-            </div>
+          
             <div class="classtime-table">
+
                 <table>
                     <thead>
                         <tr>
@@ -481,7 +495,7 @@
                                 <h6>Weight loss</h6>
                             </td>
                         </tr>
-                        <tr></tr>
+                        <tr>
                             <td class="workout-time"><h6>Morning</h6></td>
                             <td class="hover-bg ts-item" data-tsmeta="Yoga">
                                 <span>8.15 - 9:15</span>
@@ -509,7 +523,7 @@
                                 <h6>Garbhsankar</h6>
                             </td>
                         </tr>
-                        <tr></tr>
+                        <tr>
                             <td class="workout-time"><h6>Morning</h6></td>
                             <td class="hover-bg ts-item" data-tsmeta="Yoga">
                                 <span>9.00 - 10.00</span>
@@ -538,7 +552,7 @@
                                 
                             </td>
                         </tr>
-                        <tr></tr>
+                        <tr>
                             <td class="workout-time"><h6>Evening</h6></td>
                             <td class="hover-bg ts-item" data-tsmeta="Yoga">
                                 <span>4.00 - 5.00</span>
@@ -569,7 +583,7 @@
                                 <h6>Theropic</h6>
                             </td>
                         </tr>
-                        <tr></tr>
+                        <tr>
                             <td class="workout-time"><h6>Evening</h6></td>
                             <td class="hover-bg ts-item" data-tsmeta="Yoga">
                                 <span>5.15 - 6.15</span>
@@ -599,7 +613,7 @@
                                 <h6>PCOD</h6>
                             </td>
                         </tr>
-                        <tr></tr>
+                        <tr>
                         <td class="workout-time"><h6>Evening</h6></td>
                         <td class="hover-bg ts-item" data-tsmeta="Yoga">
                             <span>6.15 - 7.15</span>
@@ -629,42 +643,40 @@
                             <span>4:00 - 5.00</span>
                             <h6>kids</h6>
                         </td>
-                    </tr>
-                    <tr></tr>
-                    <td class="workout-time"><h6>Evening</h6></td>
-                    <td class="hover-bg ts-item" data-tsmeta="Yoga">
-                        <span>7.15 - 8.15</span>
-                        
-                    </td>
+                        </tr>
+                        <tr>
+                            <td class="workout-time"><h6>Evening</h6></td>
+                            <td class="hover-bg ts-item" data-tsmeta="Yoga">
+                                <span>7.15 - 8.15</span>
+                            </td>
 
-                    <td class="hover-bg ts-item" data-tsmeta="Yoga">
-                        <span>7.15 - 8.15</span>
+                            <td class="hover-bg ts-item" data-tsmeta="Yoga">
+                                <span>7.15 - 8.15</span>
+                                
+                            </td>
+                            <td class="hover-bg ts-item" data-tsmeta="Yoga">
+                                <span>7.15 - 8.15</span>
+                                
+                            </td>
+                            <td class="hover-bg ts-item" data-tsmeta="Yoga">
+                                <span>7.15 - 8.15</span>
+                                
+                            </td>
                         
-                    </td>
-                    <td class="hover-bg ts-item" data-tsmeta="Yoga">
-                        <span>7.15 - 8.15</span>
-                        
-                    </td>
-                    <td class="hover-bg ts-item" data-tsmeta="Yoga">
-                        <span>7.15 - 8.15</span>
-                        
-                    </td>
-                   
-                    <td class="hover-bg ts-item" data-tsmeta="Aerobics">
-                        <span>7.15 - 8.15</span>
-                       
-                    </td>
-                    <td class="hover-bg ts-item" data-tsmeta="Aerobics"></td>
-                        <span>7.15 - 8.15</span>
-                    </td>
-                    <td class="hover-bg ts-item" data-tsmeta="Aerobics">
-                        <span>5:00 - 6.00</span>
-                        <h6>Regular Yoga</h6>
-                    </td>
-                </tr>
+                            <td class="hover-bg ts-item" data-tsmeta="Aerobics">
+                                <span>7.15 - 8.15</span>
+                            
+                            </td>
+                            <td class="hover-bg ts-item" data-tsmeta="Aerobics">
+                                <span>7.15 - 8.15</span>
+                            </td>
+                            <td class="hover-bg ts-item" data-tsmeta="Aerobics">
+                                <span>5:00 - 6.00</span>
+                                <h6>Regular Yoga</h6>
+                            </td>]
+
+                        </tr>
                     </tbody>
-                    
-                    
                 </table>
                
             </div>
@@ -696,40 +708,30 @@
                     <div class="team-content-area text-center mb-30 wow fadeInUp" data-aos="fade-up"
                         data-aos-delay="200">
                         <div class="member-thumb">
-                            <img src="resourses/certificate/trainer.png" alt="">
+                            <img src="resourses/certificate/certificate1.png" alt="">
                         </div>
                         <h5>Gayatri Hajare</h5>
                         <span>Yoga Teacher</span>
-                        <div class="member-social-info">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-linkedin"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                        </div>
+                       
                     </div>
                 </div>
 
                 <div class="col-md-6 col-xl-3">
                     <div class="team-content-area text-center mb-30 wow fadeInUp">
                         <div class="member-thumb">
-                            <img src="resourses/certificate/trainer5.jpg.png" alt="">
+                            <img src="resourses/certificate/certificate2.png" alt="">
 
                         </div>
                         <h5>Certificate</h5>
                         <span>300 Hours</span>
-                        <div class="member-social-info">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-linkedin"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                        </div>
+                        
                     </div>
                 </div>
                 <div class="col-md-6 col-xl-3">
                     <div class="team-content-area text-center mb-30 wow fadeInUp" data-aos="fade-up"
                         data-aos-delay="200">
                         <div class="member-thumb">
-                            <img src="images/certificate2.jpg" alt="">
+                            <img src="resourses/certificate/certificate2.jpg" alt="">
                         </div>
                         
                     </div>
@@ -738,16 +740,11 @@
                     <div class="team-content-area text-center mb-30 wow fadeInUp" data-aos="fade-up"
                         data-aos-delay="200">
                         <div class="member-thumb">
-                            <img src="images/certificate3.jpg" alt="">
+                            <img src="resourses/certificate/certificate3.jpg" alt="">
                         </div>
                         <h5>Certificate</h5>
                         <span>200 Hours</span>
-                        <div class="member-social-info">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-linkedin"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                        </div>
+                      
                     </div>
                 </div>
             </div>
@@ -758,45 +755,47 @@
     <!-- section 7 ends -->
 
     <!-- section 9  starts-->
-    <section class="contact section" id="contact">
+    <section class="contact section py-5" id="contact">
         <div class="container">
-            <div class="row">
-                <div class="ml-auto col-lg-5 col-md-6 col-12">
-                    <h2 style="font-family: 'Lora', serif; letter-spacing: 2px;" class="mb-4 pb-2" data-aos="fade-up"
-                        data-aos-delay="200">
-                        Feel Free to ask anything
+            <div class="row justify-content-center">
+                <!-- Contact Form -->
+                <div class="col-lg-5 col-md-6 col-12" data-aos="fade-right">
+                    <h2 style="font-family: 'Lora', serif; letter-spacing: 2px;" class="mb-4 pb-2 text-center">
+                        Feel Free to Ask Anything
                     </h2>
+    
+                    <form id="contactForm" class="contact-form webform p-4 shadow rounded" data-aos="zoom-in">
+                        <input type="text" id="cf-name" class="form-control mb-3" placeholder="Your Name" required>
+                        <textarea id="cf-message" rows="5" class="form-control mb-3" placeholder="Your Message" required></textarea>
+    
+                        <button type="button" class="btn btn-whatsapp w-100" id="submit-button" onclick="sendWhatsAppMessage()">
+                            <i class="fa-brands fa-whatsapp fa-lg"></i> Send Message
+                        </button>
 
-                    <form action="#" method="post" class="contact-form webform" data-aos-delay="400" data-aos="fade-up"
-                        role="form">
-
-
-                        <input type="text" name="cf-name" class="form-control" placeholder="Name">
-                        <input type="email" name="cf-email" class="form-control" placeholder="Emails">
-                        <textarea name="cf-messgae" rows="5" class="form-control" placeholder="Message"></textarea>
-                        <button type="submit" class="form-control" id="submit-button" name="submit">Send
-                            Message</button>
+                        <a href="https://www.instagram.com/mrnigrse/" target="_blank" class="btn btn-instagram w-100">
+                            <i class="fa-brands fa-instagram fa-lg"></i> Connect on Instagram
+                        </a>
                     </form>
                 </div>
-
-                <div class="mx-auto mt-4 mt-lg-0 mt-md-0 col-lg-5 col-md-6 col-12">
-                    <h2 style="font-family: 'Lora', serif; letter-spacing: 2px;" class="mb-4" data-aos="fade-up"
-                        data-aos-delay="600">
-                        Where you can <span>find us</span>
+    
+                <!-- Location & Map -->
+                <div class="col-lg-5 col-md-6 col-12 mt-4" data-aos="fade-left">
+                    <h2 style="font-family: 'Lora', serif; letter-spacing: 2px;" class="mb-4 text-center">
+                        Where You Can <span>Find Us</span>
                     </h2>
-                    <p data-aos="fade-up" data-aos-delay="800">
-                        <i class="fa fa-map-marker mr-1"></i>  Pratik Nagar , Avanti Nagar Siddhivinayk eye hospital Near Murarji peth,Solapur,413002.
+                    <p class="text-center">
+                        <i class="fa fa-map-marker-alt"></i> Pratik Nagar, Avanti Nagar, Near Siddhivinayak Eye Hospital, Murarji Peth, Solapur, 413002.
                     </p>
-                    <div class="google-map" data-aos="fade-up" data-aos-delay="900">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.122425043779!2d72.7575831148854!3d21.14752568593414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04d80f5d96493%3A0x5f79790a213bd724!2sLuxuria%20Business%20Hub!5e0!3m2!1sen!2sin!4v1600443256886!5m2!1sen!2sin"
-                            width="1920" height="250" frameborder="0" style="border:0;" allowfullscreen=""
-                            aria-hidden="false" tabindex="0"></iframe>
+                    <div class="google-map" data-aos="flip-up">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3801.3243745421637!2d75.88840567533684!3d17.682130283256242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc5d07b7fe9ad67%3A0x9c498f2b10b44b1c!2sSiddhivinayak%20Netra%20Rugnalay!5e0!3m2!1sen!2sin!4v1738490394482!5m2!1sen!2sin" 
+                            width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy">
+                        </iframe>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    
     <!-- section 9  ends-->
 
     <!-- section 10 starts -->
@@ -806,7 +805,7 @@
             <div class="row">
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="footer_about">
-                        <span>Om Mantra</span>
+                        <span>Morning Rise</span>
                         <ul>
                             <li>
                                 <i class="fa fa-clock-o"></i> Mon - Sat : 06:00am - 08:15pm
@@ -839,31 +838,25 @@
                     <div class="footer_widget">
                         <h5>Contact Us</h5>
                         <ul class="footer-address">
-                            <li><i class="fa fa-phone"></i>7249858595/59</li>
-                            <li><i class="fa fa-envelope">gayatrihajare99@gmail.com</li></i>
-                            <li><i class="fa fa-location-arrow"></i>Pratik Nagar , Avanti Nagar Siddhivinayk eye hospital Near Murarji peth,Solapur,413002</li>
+                            <li> 
+                                <a href="tel:+917249858595">
+                                    <i class="fa fa-phone"></i> 7249858595
+                                </a>
+                            </li>
+                            <li>
+                                
+                                <a href="mailto:gayatrihajare99@gmail.com" style="color: black;" title="Send an email">
+                                    <i class="fa fa-envelope"></i> gayatrihajare99@gmail.com
+                                </a>
+                            </li>
+                            
+                            <li> <i class="fa fa-location-arrow"></i>Pratik Nagar , Avanti Nagar Siddhivinayk eye hospital Near Murarji peth,Solapur,413002</li>
                         </ul>
                     </div>
                 </div>
 
             </div>
-            <div class="footer_copyright">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-6">
-                        <div class="footer_copyright_text">
-                            <p>Copyright &copy; 2024 Morning Rise - All Rights 🤍Aishwarya</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6">
-                        <div class="footer_copyright_social">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-linkedin"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
         </div>
     </section>
 
